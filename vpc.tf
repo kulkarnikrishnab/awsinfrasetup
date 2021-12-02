@@ -75,8 +75,8 @@ resource "aws_route_table_association" "devvpc-public-0-a" {
   route_table_id = aws_route_table.devvpc-public.id
 }
 
-resource "aws_route_table_association" "main-public-1-a" {
-  subnet_id      = aws_subnet.main-public-1.id
-  route_table_id = aws_route_table.main-public.id
+resource "aws_route_table_association" "devvpc-public-1-a" {
+  subnet_id      = aws_subnet.devvpc-public-1.id
+  route_table_id = aws_route_table.devvpc-public.id
 
 }
